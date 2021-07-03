@@ -18,7 +18,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="One More Hike">
 <meta property="og:title" content="One More Hike">
-<meta property="og:url" content="https://onemorehike.github.io/">
+<meta property="og:url" content="http://localhost:4000/">
 
 
   <meta property="og:description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
@@ -34,7 +34,7 @@
 
 
 
-<link rel="canonical" href="https://onemorehike.github.io/">
+<link rel="canonical" href="http://localhost:4000/">
 
 
 
@@ -45,7 +45,7 @@
     
       "@type": "Person",
       "name": null,
-      "url": "https://onemorehike.github.io/"
+      "url": "http://localhost:4000/"
     
   }
 </script>
@@ -72,7 +72,8 @@
 
 <!-- For all browsers -->
 <link rel="stylesheet" href="/assets/css/main.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
 
 <!--[if IE]>
   <style>
@@ -90,6 +91,7 @@
 <![endif]-->
 
 
+
     <!-- start custom head snippets -->
 
 <!-- insert favicons. use https://realfavicongenerator.net/ -->
@@ -100,7 +102,6 @@
 
   <body class="layout--home">
     <nav class="skip-links">
-  <h2 class="screen-reader-text">Skip links</h2>
   <ul>
     <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
     <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
@@ -150,7 +151,6 @@
       <h1 id="page-title" class="page__title"></h1>
     
     
-
 
 <h3 class="archive__subtitle">Recent Posts</h3>
 
